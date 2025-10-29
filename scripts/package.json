@@ -1,0 +1,14 @@
+{
+    "name": "scripts",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "scripts": {
+        "create-index-html": "node create-index-html.js",
+        "bundle-resources": "node bundle-resources.js"
+    },
+    "dependencies": {
+        "html-minifier-next": "^3.2.1",
+        "uuid": "^13.0.0"
+    }
+}
