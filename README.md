@@ -39,7 +39,7 @@ cmake --build build
 
 ## Comment
 
-This is a proof of concept to demonstrate that native webapps truly don't need Electron. Calling the OS's browser (or webkit in Linux's case) is way simpler and creates less space.
+This is a proof of concept to demonstrate that native webapps truly don't need Electron. Calling the OS's browser (or webkit in Linux's case) is way simpler and creates less bloat.
 
 For example, my GNU/Linux build of this app only takes around ~670K. Compare that with 300M+ builds of electron apps and the difference is insane.
 
