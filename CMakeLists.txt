@@ -5,7 +5,7 @@
 cmake_minimum_required(VERSION 3.10)
 
 project(
-  webviewtest
+  webview-pixi
   VERSION 0.1.0
   HOMEPAGE_URL "https://github.com/decipaliz/webview-pixi"
   LANGUAGES C CXX
@@ -107,12 +107,12 @@ add_custom_target(
 
 ########################################
 
-### Target: webviewtest ###
+### Target: webview-pixi ###
 
 file(GLOB_RECURSE SOURCES "src/*.c")
-add_executable(webviewtest ${SOURCES})
-add_dependencies(webviewtest html resources)
-target_include_directories(webviewtest PRIVATE "src" PRIVATE ${CMAKE_CURRENT_BINARY_DIR})
-target_link_libraries(webviewtest PRIVATE webview::core_static PRIVATE base64)
+add_executable(webview-pixi ${SOURCES})
+add_dependencies(webview-pixi html resources)
+target_include_directories(webview-pixi PRIVATE "src" PRIVATE ${CMAKE_CURRENT_BINARY_DIR})
+target_link_libraries(webview-pixi PRIVATE webview::core_static PRIVATE base64)
 
 ########################################

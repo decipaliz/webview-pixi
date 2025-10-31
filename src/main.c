@@ -36,7 +36,7 @@ int main(void)
     }
 
     webview_t w = webview_create(USE_DEVTOOLS, NULL);
-    webview_set_title(w, "My Game");
+    webview_set_title(w, "webview + PixiJS");
     webview_set_size(w, 800, 600, WEBVIEW_HINT_FIXED);
     webview_set_html(w, index_html);
     bind_all(w);
